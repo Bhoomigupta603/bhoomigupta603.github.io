@@ -11,26 +11,3 @@ if(del && j===0){del=false;i=(i+1)%text.length;}
 setTimeout(type,150);
 }
 type();
-
-function sendImage(){
-    const file = document.getElementById("imgInput").files[0];
-    if(!file){
-        alert("Please select an image");
-        return;
-    }
-
-    const form = new FormData();
-    form.append("image", file);
-
-    fetch("http://127.0.0.1:5000/caption", {
-        method: "POST",
-        body: form
-    })
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById("captionResult").innerText = data.caption;
-    })
-    .catch(err => {
-        document.getElementById("captionResult").innerText = "Server not running";
-    });
-}
