@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>PixelWhisper – AI Image Caption Generator</title>
 <link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="hero">
-<h1>PixelWhisper</h1>
-<p>AI-powered image captioning system</p>
-<button onclick="speak()">🔊 Explain this project</button>
-<a href="https://github.com/Bhoomigupta603/-PixelWishper---Smart-Image-Caption-Generator" target="_blank">GitHub</a>
-</div>
+<section class="project-hero">
+  <h1>PixelWhisper</h1>
+  <p class="tagline">AI-Powered Image Caption Generator</p>
 
-<div class="section">
-<h2>Demo</h2>
-<video controls width="100%">
-  <source src="../videos/pixelwhisper.mp4" type="video/mp4">
-</video>
-</div>
+  <div class="project-buttons">
+    <button onclick="speak()">🔊 AI Explanation</button>
+    <a href="https://github.com/Bhoomigupta603/-PixelWishper---Smart-Image-Caption-Generator" target="_blank">GitHub</a>
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
+</section>
 
-<div class="section">
-<h2>What does it do?</h2>
-<p>
-PixelWhisper uses deep learning to understand the visual content of an image and generate a human-like
-text description. It combines computer vision and natural language processing into a single AI system.
-</p>
-</div>
+<section class="project-section">
+  <h2>Live Demo</h2>
+  <div class="video-box">
+    <video controls>
+      <source src="../videos/pixelwhisper.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
 
-<div class="section">
-<h2>AI Pipeline</h2>
-<p>
-Image → CNN (feature extraction) → Transformer → Text Caption
-</p>
-</div>
+<section class="project-section">
+  <h2>What does PixelWhisper do?</h2>
+  <p>
+PixelWhisper is an end-to-end Artificial Intelligence system that analyzes an image and produces a
+human-like textual description. It combines deep learning-based visual understanding with
+natural language generation to convert pixels into meaningful language.
+  </p>
+</section>
 
-<div class="section">
-<h2>Model & Tech</h2>
-<ul>
-<li>CNN + Transformer</li>
-<li>HuggingFace ViT-GPT2</li>
-<li>Python, PyTorch, Flask</li>
-</ul>
-</div>
+<section class="project-section">
+  <h2>AI Architecture</h2>
+  <div class="pipeline">
+    <div>Image Input</div>
+    <div>CNN / Vision Transformer</div>
+    <div>Feature Embeddings</div>
+    <div>Transformer Decoder</div>
+    <div>Natural Language Caption</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div>ViT-GPT2 (HuggingFace)</div>
+    <div>PyTorch</div>
+    <div>Transformers</div>
+    <div>Computer Vision</div>
+    <div>Natural Language Processing</div>
+    <div>Flask Deployment</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Why this project matters</h2>
+  <p>
+PixelWhisper demonstrates the real-world power of multimodal AI — allowing machines to see and
+describe the world like humans. This type of technology is used in accessibility tools,
+self-driving systems, surveillance, content moderation, and assistive AI.
+  </p>
+</section>
 
 <script>
 function speak(){
-  const text = "PixelWhisper is an AI system that looks at an image and describes it using deep learning and natural language processing.";
+  const text = "PixelWhisper is an artificial intelligence system that looks at images and generates human like captions using computer vision and deep learning transformers.";
   const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
   speechSynthesis.speak(speech);
 }
 </script>
