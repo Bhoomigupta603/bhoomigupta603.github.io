@@ -1,41 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Triad Binarize Defender</title>
+<meta charset="UTF-8">
+<title>Triad Binarize Defender – Watermark Protection AI</title>
 <link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <section class="project-hero">
-<h1>Triad Binarize Defender</h1>
-<p class="tagline">YOLOv8 Powered Watermark AI</p>
+  <h1>Triad Binarize Defender</h1>
+  <p class="tagline">YOLOv8-powered Watermark Protection System</p>
 
-<div class="project-buttons">
-<button onclick="speak()">🔊 AI Explanation</button>
-<a href="https://github.com/Bhoomigupta603/TriadBinarize_Defender_in_Watermark_Images" target="_blank">GitHub</a>
-<a href="../index.html">← Back</a>
-</div>
+  <div class="project-buttons">
+    <button onclick="speak()">🔊 AI Explanation</button>
+    <a href="https://github.com/Bhoomigupta603/TriadBinarize_Defender_in_Watermark_Images" target="_blank">GitHub</a>
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
 </section>
 
 <section class="project-section">
-<h2>What does it do?</h2>
-<p>This system detects and binarizes watermark images using YOLOv8 and deep learning to improve digital security.</p>
+  <h2>Live Demo</h2>
+  <div class="video-box">
+    <video controls>
+      <source src="../videos/TriadBinarize_Defender.mp4" type="video/mp4">
+    </video>
+  </div>
 </section>
 
 <section class="project-section">
-<h2>AI Pipeline</h2>
-<div class="pipeline">
-<div>Image Input</div>
-<div>YOLOv8</div>
-<div>Watermark Detection</div>
-<div>Binarization</div>
-<div>Clean Output</div>
-</div>
+  <h2>What does Triad Binarize Defender do?</h2>
+  <p>
+Triad Binarize Defender is an AI-powered image processing system designed to protect digital watermarks.
+It uses deep learning to detect watermark regions and convert them into clean, high-contrast binary images
+to improve security, readability, and robustness against tampering.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>AI Architecture</h2>
+  <div class="pipeline">
+    <div>Watermarked Image</div>
+    <div>YOLOv8 Object Detection</div>
+    <div>Region Segmentation</div>
+    <div>Binarization Model</div>
+    <div>Clean Watermark Output</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div>YOLOv8</div>
+    <div>OpenCV</div>
+    <div>Python</div>
+    <div>Deep Learning</div>
+    <div>Image Processing</div>
+    <div>Flask</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Why this project matters</h2>
+  <p>
+Digital watermark security is critical for copyright protection, media authentication, and fraud prevention.
+This project demonstrates how modern AI can automatically detect and protect watermark information,
+making digital assets safer from piracy and manipulation.
+  </p>
 </section>
 
 <script>
 function speak(){
-  speechSynthesis.speak(new SpeechSynthesisUtterance("Triad Defender uses YOLO version 8 to detect and clean watermark images using deep learning."));
+  const text = "Triad Binarize Defender is an artificial intelligence system that detects and protects watermarks in images using YOLOv8 and deep learning based binarization.";
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
+  speechSynthesis.speak(speech);
 }
 </script>
 
