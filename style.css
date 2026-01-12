@@ -128,3 +128,27 @@ text-decoration:none;
   text-align:center;
 }
 
+/* ===== Project Card Buttons ===== */
+
+.card-buttons{
+  display:flex;
+  gap:15px;
+  margin-top:15px;
+}
+
+.view-btn{
+  background:#66fcf1;
+  color:black;
+  padding:10px 22px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 0 10px rgba(102,252,241,0.7);
+  transition:0.3s;
+}
+
+.view-btn:hover{
+  transform:scale(1.08);
+}
+
+
