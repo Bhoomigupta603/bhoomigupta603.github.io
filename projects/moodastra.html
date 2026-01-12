@@ -1,29 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>MoodAstra</title>
+<meta charset="UTF-8">
+<title>MoodAstra – Mood-Based Movie Recommender</title>
 <link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <section class="project-hero">
-<h1>MoodAstra</h1>
-<p class="tagline">Emotion Based AI Movie Recommender</p>
+  <h1>MoodAstra</h1>
+  <p class="tagline">Emotion-based AI Movie Recommendation System</p>
 
-<div class="project-buttons">
-<button onclick="speak()">🔊 AI Explanation</button>
-<a href="https://github.com/Bhoomigupta603/MoodAstra---Mood-based-Movie-Recommender" target="_blank">GitHub</a>
-<a href="../index.html">← Back</a>
-</div>
+  <div class="project-buttons">
+    <button onclick="speak()">🔊 AI Explanation</button>
+    <a href="https://github.com/Bhoomigupta603/MoodAstra---Mood-based-Movie-Recommender" target="_blank">GitHub</a>
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
 </section>
 
 <section class="project-section">
-<p>This AI system detects user emotion and recommends movies using machine learning and recommendation algorithms.</p>
+  <h2>Live Demo</h2>
+  <div class="video-box">
+    <video controls>
+      <source src="../videos/MoodAstra-Movie _Recommender.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>What does MoodAstra do?</h2>
+  <p>
+MoodAstra is an AI-powered movie recommender system that suggests films based on the user's emotional
+state. It analyzes mood inputs such as happy, sad, romantic, or energetic and recommends movies that
+match the user's feelings.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>AI Architecture</h2>
+  <div class="pipeline">
+    <div>User Mood Input</div>
+    <div>Emotion Classification</div>
+    <div>Movie Dataset</div>
+    <div>Recommendation Engine</div>
+    <div>Personalized Movie List</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div>Python</div>
+    <div>Machine Learning</div>
+    <div>TMDB API</div>
+    <div>Flask</div>
+    <div>Emotion Analysis</div>
+    <div>Recommender Systems</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Why this project matters</h2>
+  <p>
+MoodAstra shows how Artificial Intelligence can create emotionally intelligent systems that enhance
+user experience. Emotion-aware recommendations improve engagement and demonstrate how AI can
+personalize digital content in entertainment platforms.
+  </p>
 </section>
 
 <script>
 function speak(){
-  speechSynthesis.speak(new SpeechSynthesisUtterance("MoodAstra recommends movies by detecting the emotional state of the user using artificial intelligence."));
+  const text = "MoodAstra is an artificial intelligence system that recommends movies based on a user’s emotional state using machine learning and recommendation algorithms.";
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
+  speechSynthesis.speak(speech);
 }
 </script>
 
