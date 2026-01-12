@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voice TaskMate</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<section class="project-hero">
+<h1>Voice TaskMate</h1>
+<p class="tagline">AI Voice Controlled Assistant</p>
+
+<div class="project-buttons">
+<button onclick="speak()">🔊 AI Explanation</button>
+<a href="https://github.com/Bhoomigupta603/Voice-Taskmate" target="_blank">GitHub</a>
+<a href="../index.html">← Back</a>
+</div>
+</section>
+
+<section class="project-section">
+<p>This AI assistant listens to human voice, understands tasks using NLP and executes commands automatically.</p>
+</section>
+
+<script>
+function speak(){
+  speechSynthesis.speak(new SpeechSynthesisUtterance("Voice TaskMate is an artificial intelligence assistant that understands spoken commands and performs tasks."));
+}
+</script>
+
+</body>
+</html>
