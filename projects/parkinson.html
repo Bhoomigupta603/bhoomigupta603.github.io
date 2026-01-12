@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parkinson’s Disease Detector</title>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="project-hero">
+  <h1>Parkinson’s Disease Detector</h1>
+  <p class="tagline">AI-powered Healthcare Prediction System</p>
+
+  <div class="project-buttons">
+    <button onclick="speak()">🔊 AI Explanation</button>
+    <a href="https://github.com/Bhoomigupta603/Parkinson-Disease-Detector" target="_blank">GitHub</a>
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>What does this system do?</h2>
+  <p>
+This AI system analyzes voice and biomedical features to detect Parkinson’s Disease using machine learning.
+It assists doctors in early diagnosis and severity assessment.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>AI Architecture</h2>
+  <div class="pipeline">
+    <div>Voice & Features</div>
+    <div>Preprocessing</div>
+    <div>ML Classifier</div>
+    <div>Risk Score</div>
+    <div>Diagnosis</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div>Python</div>
+    <div>Scikit-Learn</div>
+    <div>Feature Engineering</div>
+    <div>Machine Learning</div>
+    <div>Healthcare AI</div>
+    <div>Flask</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Why this project matters</h2>
+  <p>
+Early Parkinson’s detection can save lives and improve treatment quality. This AI model helps bring fast and
+low-cost screening into real-world medical systems.
+  </p>
+</section>
+
+<script>
+function speak(){
+  const text = "This system uses machine learning to analyze medical voice signals and predict Parkinson’s disease with high accuracy.";
+  const s = new SpeechSynthesisUtterance(text);
+  speechSynthesis.speak(s);
+}
+</script>
+
+</body>
+</html>
