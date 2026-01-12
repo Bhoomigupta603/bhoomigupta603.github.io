@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MoodAstra</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<section class="project-hero">
+<h1>MoodAstra</h1>
+<p class="tagline">Emotion Based AI Movie Recommender</p>
+
+<div class="project-buttons">
+<button onclick="speak()">🔊 AI Explanation</button>
+<a href="https://github.com/Bhoomigupta603/MoodAstra---Mood-based-Movie-Recommender" target="_blank">GitHub</a>
+<a href="../index.html">← Back</a>
+</div>
+</section>
+
+<section class="project-section">
+<p>This AI system detects user emotion and recommends movies using machine learning and recommendation algorithms.</p>
+</section>
+
+<script>
+function speak(){
+  speechSynthesis.speak(new SpeechSynthesisUtterance("MoodAstra recommends movies by detecting the emotional state of the user using artificial intelligence."));
+}
+</script>
+
+</body>
+</html>
