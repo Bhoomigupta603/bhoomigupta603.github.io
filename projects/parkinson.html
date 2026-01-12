@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Parkinson’s Disease Detector</title>
+<title>Parkinson’s Disease Detector – AI Healthcare System</title>
 <link rel="stylesheet" href="../style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <section class="project-hero">
   <h1>Parkinson’s Disease Detector</h1>
-  <p class="tagline">AI-powered Healthcare Prediction System</p>
+  <p class="tagline">AI-powered healthcare diagnosis system</p>
 
   <div class="project-buttons">
     <button onclick="speak()">🔊 AI Explanation</button>
@@ -26,52 +27,57 @@
       <source src="../videos/Parkinson_Disease_Detector.mp4" type="video/mp4">
     </video>
   </div>
-</section>  
+</section>
 
 <section class="project-section">
   <h2>What does this system do?</h2>
   <p>
-This AI system analyzes voice and biomedical features to detect Parkinson’s Disease using machine learning.
-It assists doctors in early diagnosis and severity assessment.
+This AI system detects Parkinson’s disease by analyzing biomedical voice features extracted from
+patient speech recordings. Machine learning models are used to classify whether a person shows
+symptoms of Parkinson’s disease or not.
   </p>
 </section>
 
 <section class="project-section">
   <h2>AI Architecture</h2>
   <div class="pipeline">
-    <div>Voice & Features</div>
-    <div>Preprocessing</div>
+    <div>Voice Recording</div>
+    <div>Feature Extraction</div>
+    <div>StandardScaler</div>
     <div>ML Classifier</div>
-    <div>Risk Score</div>
-    <div>Diagnosis</div>
+    <div>Parkinson’s Prediction</div>
   </div>
 </section>
 
 <section class="project-section">
   <h2>Technology Stack</h2>
   <div class="tech-grid">
-    <div>Python</div>
-    <div>Scikit-Learn</div>
-    <div>Feature Engineering</div>
+    <div>Scikit-learn</div>
+    <div>Pandas & NumPy</div>
+    <div>Random Forest</div>
     <div>Machine Learning</div>
     <div>Healthcare AI</div>
-    <div>Flask</div>
+    <div>Flask Deployment</div>
   </div>
 </section>
 
 <section class="project-section">
   <h2>Why this project matters</h2>
   <p>
-Early Parkinson’s detection can save lives and improve treatment quality. This AI model helps bring fast and
-low-cost screening into real-world medical systems.
+Early detection of Parkinson’s disease can significantly improve patient care and treatment.
+This project demonstrates how Artificial Intelligence can assist doctors by providing fast,
+accurate, and data-driven diagnosis support using voice biomarkers.
   </p>
 </section>
 
 <script>
 function speak(){
-  const text = "This system uses machine learning to analyze medical voice signals and predict Parkinson’s disease with high accuracy.";
-  const s = new SpeechSynthesisUtterance(text);
-  speechSynthesis.speak(s);
+  const text = "This artificial intelligence system analyzes medical voice data to detect Parkinson’s disease using machine learning algorithms.";
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
+  speechSynthesis.speak(speech);
 }
 </script>
 
