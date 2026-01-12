@@ -1,29 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Voice TaskMate</title>
+<meta charset="UTF-8">
+<title>Voice TaskMate – AI Voice Assistant</title>
 <link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <section class="project-hero">
-<h1>Voice TaskMate</h1>
-<p class="tagline">AI Voice Controlled Assistant</p>
+  <h1>Voice TaskMate</h1>
+  <p class="tagline">AI-powered Voice Controlled Assistant</p>
 
-<div class="project-buttons">
-<button onclick="speak()">🔊 AI Explanation</button>
-<a href="https://github.com/Bhoomigupta603/Voice-Taskmate" target="_blank">GitHub</a>
-<a href="../index.html">← Back</a>
-</div>
+  <div class="project-buttons">
+    <button onclick="speak()">🔊 AI Explanation</button>
+    <a href="https://github.com/Bhoomigupta603/Voice-Taskmate" target="_blank">GitHub</a>
+    <a href="../index.html">← Back to Portfolio</a>
+  </div>
 </section>
 
 <section class="project-section">
-<p>This AI assistant listens to human voice, understands tasks using NLP and executes commands automatically.</p>
+  <h2>Live Demo</h2>
+  <div class="video-box">
+    <video controls>
+      <source src="../videos/Voice_Taskmate.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>What does Voice TaskMate do?</h2>
+  <p>
+Voice TaskMate is an AI-powered personal assistant that listens to human voice commands and performs
+tasks such as opening applications, searching the web, telling the time, and responding intelligently.
+It uses speech recognition and natural language processing to understand user intent.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>AI Architecture</h2>
+  <div class="pipeline">
+    <div>Voice Input</div>
+    <div>Speech Recognition</div>
+    <div>NLP Intent Analysis</div>
+    <div>Task Execution Engine</div>
+    <div>Spoken Response</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div>Python</div>
+    <div>Speech Recognition</div>
+    <div>Natural Language Processing</div>
+    <div>PyTTSx3</div>
+    <div>Flask</div>
+    <div>AI Automation</div>
+  </div>
+</section>
+
+<section class="project-section">
+  <h2>Why this project matters</h2>
+  <p>
+Voice TaskMate demonstrates how AI can create hands-free intelligent systems that improve accessibility
+and productivity. Voice-based AI is widely used in smart assistants, automation systems, and assistive technologies.
+  </p>
 </section>
 
 <script>
 function speak(){
-  speechSynthesis.speak(new SpeechSynthesisUtterance("Voice TaskMate is an artificial intelligence assistant that understands spoken commands and performs tasks."));
+  const text = "Voice TaskMate is an artificial intelligence voice assistant that understands spoken commands and performs tasks using speech recognition and natural language processing.";
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
+  speechSynthesis.speak(speech);
 }
 </script>
 
