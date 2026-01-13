@@ -151,4 +151,12 @@ text-decoration:none;
   transform:scale(1.08);
 }
 
+.resume-btn {
+  background: #64ffda;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 15px #64ffda;
+}
+
+
 
