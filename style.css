@@ -167,3 +167,11 @@ text-decoration:none;
   margin-bottom: 8px;
   line-height: 1.6;
 }
+
+.tech-line {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin: 6px 0 12px;
+  color: #b8fdf6;
+}
+
