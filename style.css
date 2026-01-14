@@ -175,3 +175,12 @@ text-decoration:none;
   color: #b8fdf6;
 }
 
+.card .view-btn{
+  color: #000 !important;
+}
+
+.card .view-btn:hover{
+  color: #000;
+}
+
+
