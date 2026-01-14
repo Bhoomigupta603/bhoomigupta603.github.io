@@ -158,5 +158,15 @@ text-decoration:none;
   box-shadow: 0 0 15px #64ffda;
 }
 
+.exp-list{
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.exp-list li{
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
 
 
